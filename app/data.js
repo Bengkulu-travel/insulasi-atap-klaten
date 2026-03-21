@@ -32,7 +32,7 @@ export const products = [
     description: "Tidak perlu dua lapisan insulasi. Bubble Foil menggabungkan kemampuan memantulkan panas dan menyerap suara dalam satu produk yang praktis, ringan, dan mudah dipasang sendiri — cocok untuk atap rumah hingga gudang.",
     image: "/images/bubble-foil.webp",
     supportingImages: [
-    "/images/bubble_foil_pendukung1.jpg"
+    "/images/bubble_foil_pendukung1.jpeg"
     ],
     badge: "Terlaris",
     badgeColor: "bg-blue-600",
