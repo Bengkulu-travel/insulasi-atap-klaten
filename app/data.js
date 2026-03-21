@@ -112,14 +112,14 @@ export const storeInfo = {
       googleMapsEmbed: "https://maps.google.com/maps?q=Klaten,+Jawa+Tengah&output=embed&z=13",
       serviceArea: ["Klaten Kota", "Prambanan", "Delanggu", "Ceper", "Pedan", "Trucuk", "Boyolali", "Solo"],
     },
-    {
-      id: "jogja",
-      city: "Yogyakarta",
-      label: "Cabang Yogyakarta",
-      address: "Yogyakarta, DIY",
-      googleMapsUrl: "https://share.google/zOgLfSpzFtnPEEQZL",
-      googleMapsEmbed: "https://maps.google.com/maps?q=Yogyakarta,+DIY&output=embed&z=14",
-      serviceArea: ["Kota Yogyakarta", "Sleman", "Bantul", "Godean", "Mlati", "Depok", "Kalasan", "Wonosari"],
-    },
+   {
+  id: "jogja",
+  city: "Yogyakarta",
+  label: "Cabang Yogyakarta",
+  address: "JL Stadion Maguwoharjo Km. 1 RW 43, Malangsari, Wedomartani, Kab. Sleman, DIY 55584",
+  googleMapsUrl: "https://share.google/t4GACCe0lr9rEBa3X",
+  googleMapsEmbed: "https://maps.google.com/maps?q=JL+Stadion+Maguwoharjo+Wedomartani+Sleman+Yogyakarta&output=embed&z=16",
+  serviceArea: ["Kota Yogyakarta", "Sleman", "Bantul", "Godean", "Mlati", "Depok", "Kalasan", "Wonosari"],
+},
   ],
 }
