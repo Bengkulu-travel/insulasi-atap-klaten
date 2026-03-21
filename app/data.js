@@ -79,7 +79,7 @@ export const products = [
 // Upload foto ke public/images/ lalu uncomment dan isi di bawah
 // ============================================================
 export const galleryImages = [
-  // { id: 1, src: "/images/proyek1.jpg", alt: "Pemasangan insulasi", caption: "Rumah Tinggal - Klaten Kota" },
+  { id: 1, src: "/images/imagesproyek1.jpg", alt: "Pemasangan insulasi", caption: "Pintu Tol - Klaten Kota" },
   // { id: 2, src: "/images/proyek2.jpg", alt: "Insulasi gedung", caption: "Komersial - Prambanan" },
   // { id: 3, src: "/images/proyek3.jpg", alt: "Pemasangan woven foil", caption: "Pemasangan - Delanggu" },
   // { id: 4, src: "/images/proyek4.jpg", alt: "Hasil pemasangan", caption: "Hasil - Ceper" },
