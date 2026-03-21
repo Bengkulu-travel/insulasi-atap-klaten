@@ -1,34 +1,31 @@
 import { storeInfo } from '../app/data'
 
-export default function Location({ branchId = 'klaten' }) {
-  const branch = (storeInfo.branches || []).find(b => b.id === branchId) || storeInfo.branches[0] || {}
-  const serviceArea = branch.serviceArea || []
-  const isJogja = branchId === 'jogja'
-
-  const waMsg = isJogja
-    ? 'Halo, saya dari Yogyakarta dan ingin tahu lokasi toko insulasi atap. Bisa kirim alamat lengkap?'
-    : 'Halo, saya ingin tahu lokasi toko insulasi atap Klaten. Bisa kirim alamat lengkap?'
-
-  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent(waMsg)}`
+export default function Location() {
+  const branch = (storeInfo.branches || []).find(b => b.id === 'klaten') || {}
+  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya ingin tahu lokasi toko insulasi atap Klaten. Bisa kirim alamat lengkap?')}`
 
   return (
     <section id="lokasi" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 bg-green-50 text-green-800 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-            📍 {isJogja ? 'Temukan Kami di Yogyakarta' : 'Temukan Kami'}
+            📍 Temukan Kami
           </div>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-stone-900 mb-4">Lokasi & Kontak</h2>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-stone-900 mb-4">
+            Lokasi & Kontak
+          </h2>
           <div className="section-divider mx-auto mb-4"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div className="rounded-3xl overflow-hidden shadow-lg border border-stone-100 h-80">
             <iframe
-              src={branch.googleMapsEmbed || ''}
-              width="100%" height="100%"
+              src="https://maps.google.com/maps?q=Klaten,+Jawa+Tengah&output=embed&z=13"
+              width="100%"
+              height="100%"
               style={{ border: 0, minHeight: '320px' }}
-              allowFullScreen loading="lazy"
+              allowFullScreen
+              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
             />
@@ -38,11 +35,10 @@ export default function Location({ branchId = 'klaten' }) {
             <div className="p-5 bg-amber-50 rounded-2xl border border-amber-100 flex gap-4">
               <div className="text-2xl flex-shrink-0">📍</div>
               <div>
-                <div className="font-bold text-stone-900 mb-1">
-                  Lokasi {isJogja ? 'Cabang Yogyakarta' : 'Cabang Klaten'}
-                </div>
-                <div className="text-stone-600 text-sm">{branch.address}</div>
-                <a href={branch.googleMapsUrl} target="_blank" rel="noopener noreferrer"
+                <div className="font-bold text-stone-900 mb-1">Lokasi Cabang Klaten</div>
+                <div className="text-stone-600 text-sm">{branch.address || 'Klaten, Jawa Tengah'}</div>
+                <a href={branch.googleMapsUrl || 'https://share.google/cF2IbK8F2WXHAI9ho'}
+                  target="_blank" rel="noopener noreferrer"
                   className="text-amber-700 text-sm font-semibold hover:underline mt-1 inline-block">
                   Buka di Google Maps →
                 </a>
@@ -70,30 +66,13 @@ export default function Location({ branchId = 'klaten' }) {
               </div>
             </div>
 
-            {isJogja && serviceArea.length > 0 && (
-              <div className="p-5 bg-stone-50 rounded-2xl border border-stone-100">
-                <div className="font-bold text-stone-900 mb-3">🚚 Area Pengiriman Yogyakarta</div>
-                <div className="flex flex-wrap gap-2">
-                  {serviceArea.map(area => (
-                    <span key={area} className="text-xs bg-white border border-stone-200 text-stone-600 px-2.5 py-1 rounded-full">
-                      {area}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
             <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100 flex items-center justify-between">
               <div>
-                <div className="text-sm font-semibold text-stone-800">
-                  {isJogja ? 'Juga tersedia di Klaten' : 'Juga tersedia di Yogyakarta'}
-                </div>
-                <div className="text-xs text-stone-500">
-                  {isJogja ? 'Cabang utama kami' : 'Cabang kami di Jogja'}
-                </div>
+                <div className="text-sm font-semibold text-stone-800">Juga tersedia di Yogyakarta</div>
+                <div className="text-xs text-stone-500">Lihat halaman cabang Jogja kami</div>
               </div>
-              <a href={isJogja ? '/#lokasi' : '/jogja'} className="text-amber-700 text-sm font-bold hover:underline flex-shrink-0">
-                {isJogja ? 'Lihat Lokasi →' : 'Halaman Jogja →'}
+              <a href="/jogja" className="text-amber-700 text-sm font-bold hover:underline flex items-center gap-1 flex-shrink-0">
+                Halaman Jogja →
               </a>
             </div>
 
