@@ -79,7 +79,7 @@ export default function Benefits() {
                 Pengiriman & konsultasi langsung ke lokasi Anda
               </p>
               <div className="flex flex-wrap gap-2">
-                {storeInfo.serviceArea.map(area => (
+                {storeInfo.branches.flatMap(b => b.serviceArea).filter((v, i, a) => a.indexOf(v) === i).map(area => (
                   <span key={area} className="bg-white/15 text-white text-xs font-medium px-3 py-1 rounded-full border border-white/20">
                     📍 {area}
                   </span>

@@ -59,7 +59,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex gap-2 text-stone-400">
                 <span>📍</span>
-                <span>{storeInfo.address}</span>
+                <span>Klaten & Yogyakarta</span>
               </div>
               <div className="flex gap-2 text-stone-400">
                 <span>🕐</span>
@@ -67,7 +67,7 @@ export default function Footer() {
               </div>
               <div className="flex gap-2 text-stone-400">
                 <span>🚚</span>
-                <span>Pengiriman: {storeInfo.serviceArea.slice(0, 3).join(', ')} & lainnya</span>
+                <span>Pengiriman: Klaten, Jogja & sekitarnya</span>
               </div>
             </div>
           </div>

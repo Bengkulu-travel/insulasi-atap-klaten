@@ -1,7 +1,7 @@
 import { storeInfo } from '../app/data'
 
 export default function HeroJogja() {
-  const branch = storeInfo.branches.find(b => b.id === 'jogja')
+  const branch = storeInfo.branches.find(b => b.id === 'jogja') || storeInfo.branches[1] || storeInfo.branches[0]
   const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya dari Yogyakarta dan ingin konsultasi mengenai insulasi atap.')}`
 
   return (

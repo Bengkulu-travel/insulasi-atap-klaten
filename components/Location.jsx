@@ -1,7 +1,7 @@
 import { storeInfo } from '../app/data'
 
 export default function Location() {
-  const branch = storeInfo.branches.find(b => b.id === 'klaten')
+  const branch = storeInfo.branches.find(b => b.id === 'klaten') || storeInfo.branches[0]
   const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya ingin tahu lokasi toko insulasi atap Klaten. Bisa kirim alamat lengkap?')}`
 
   return (

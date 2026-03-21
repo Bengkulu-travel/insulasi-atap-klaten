@@ -117,10 +117,9 @@ export const storeInfo = {
       id: "jogja",
       city: "Yogyakarta",
       label: "Cabang Yogyakarta",
-      // ✏️ Ganti address & googleMapsUrl dengan lokasi Jogja Anda
       address: "Yogyakarta, DIY",
-      googleMapsUrl: "https://maps.google.com/?q=Yogyakarta",
-      googleMapsEmbed: "https://maps.google.com/maps?q=Yogyakarta,+DIY&output=embed&z=13",
+      googleMapsUrl: "https://share.google/zOgLfSpzFtnPEEQZL",
+      googleMapsEmbed: "https://maps.google.com/maps?q=Yogyakarta,+DIY&output=embed&z=14",
       serviceArea: ["Kota Yogyakarta", "Sleman", "Bantul", "Godean", "Mlati", "Depok", "Kalasan", "Wonosari"],
     },
   ],
