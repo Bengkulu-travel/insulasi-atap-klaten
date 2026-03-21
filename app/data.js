@@ -56,7 +56,7 @@ export const products = [
     image: "/images/alumunium_foam_foil.webp",
     supportingImages: [
   "/images/alumunium_foam_foil_pendukung1.jpeg",
-      "/images/alumunium_foam_foil_pendukung2.jpeg",
+      "/images/alumunium_foam_foil_pendukung2.jpg",
     ],
     badge: "Premium",
     badgeColor: "bg-stone-700",
