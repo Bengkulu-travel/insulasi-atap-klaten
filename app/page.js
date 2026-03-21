@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Products from '../components/Products'
 import Benefits from '../components/Benefits'
+import Branches from '../components/Branches'
 import Gallery from '../components/Gallery'
 import Location from '../components/Location'
 import Footer from '../components/Footer'
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Products />
       <Benefits />
+      <Branches />
       <Gallery />
       <Location />
       <Footer />

@@ -1,15 +1,16 @@
 import { storeInfo } from '../app/data'
 
-export default function Location() {
-  const branch = storeInfo.branches.find(b => b.id === 'klaten')
-  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya ingin tahu lokasi toko insulasi atap Klaten. Bisa kirim alamat lengkap?')}`
+export default function LocationJogja() {
+  const branch = storeInfo.branches.find(b => b.id === 'jogja')
+  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya dari Yogyakarta dan ingin tahu lokasi toko insulasi atap. Bisa kirim alamat lengkap?')}`
 
   return (
     <section id="lokasi" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
+        {/* Header */}
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 bg-green-50 text-green-800 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-            📍 Temukan Kami
+            📍 Temukan Kami di Yogyakarta
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-stone-900 mb-4">
             Lokasi & Kontak
@@ -18,7 +19,7 @@ export default function Location() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
-          {/* Map Klaten */}
+          {/* Map Jogja */}
           <div className="rounded-3xl overflow-hidden shadow-lg border border-stone-100 h-80">
             <iframe
               src={branch.googleMapsEmbed}
@@ -34,10 +35,11 @@ export default function Location() {
 
           {/* Contact Info */}
           <div className="space-y-4">
+            {/* Address */}
             <div className="p-5 bg-amber-50 rounded-2xl border border-amber-100 flex gap-4">
               <div className="text-2xl flex-shrink-0">📍</div>
               <div>
-                <div className="font-bold text-stone-900 mb-1">Lokasi Cabang Klaten</div>
+                <div className="font-bold text-stone-900 mb-1">Lokasi Cabang Yogyakarta</div>
                 <div className="text-stone-600 text-sm">{branch.address}</div>
                 <a
                   href={branch.googleMapsUrl}
@@ -50,18 +52,24 @@ export default function Location() {
               </div>
             </div>
 
+            {/* Phone */}
             <div className="p-5 bg-green-50 rounded-2xl border border-green-100 flex gap-4">
               <div className="text-2xl flex-shrink-0">📱</div>
               <div>
                 <div className="font-bold text-stone-900 mb-1">WhatsApp / Telepon</div>
                 <div className="text-stone-600 text-sm">{storeInfo.phone}</div>
-                <a href={waUrl} target="_blank" rel="noopener noreferrer"
-                  className="text-green-600 text-sm font-semibold hover:underline mt-1 inline-block">
+                <a
+                  href={waUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-600 text-sm font-semibold hover:underline mt-1 inline-block"
+                >
                   Chat Sekarang →
                 </a>
               </div>
             </div>
 
+            {/* Hours */}
             <div className="p-5 bg-blue-50 rounded-2xl border border-blue-100 flex gap-4">
               <div className="text-2xl flex-shrink-0">🕐</div>
               <div>
@@ -71,17 +79,32 @@ export default function Location() {
               </div>
             </div>
 
-            {/* Jogja branch promo */}
+            {/* Service area Jogja */}
+            <div className="p-5 bg-stone-50 rounded-2xl border border-stone-100">
+              <div className="font-bold text-stone-900 mb-3 flex items-center gap-2">
+                🚚 Area Pengiriman Yogyakarta
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {branch.serviceArea.map(area => (
+                  <span key={area} className="text-xs bg-white border border-stone-200 text-stone-600 px-2.5 py-1 rounded-full">
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Also have Klaten branch */}
             <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100 flex items-center justify-between">
               <div>
-                <div className="text-sm font-semibold text-stone-800">Juga tersedia di Yogyakarta</div>
-                <div className="text-xs text-stone-500">Lihat halaman cabang Jogja kami</div>
+                <div className="text-sm font-semibold text-stone-800">Juga tersedia di Klaten</div>
+                <div className="text-xs text-stone-500">Cabang utama kami</div>
               </div>
-              <a href="/jogja" className="text-amber-700 text-sm font-bold hover:underline flex items-center gap-1 flex-shrink-0">
-                Halaman Jogja →
+              <a href="/#lokasi" className="text-amber-700 text-sm font-bold hover:underline flex items-center gap-1">
+                Lihat Lokasi →
               </a>
             </div>
 
+            {/* WA CTA */}
             <a
               href={waUrl}
               target="_blank"

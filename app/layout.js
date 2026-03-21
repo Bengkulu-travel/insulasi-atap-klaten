@@ -1,12 +1,12 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Insulasi Atap Klaten | Solusi Nyaman & Hemat Energi',
-  description: 'Toko insulasi atap terpercaya di Klaten. Produk berkualitas untuk hunian dan komersial. Konsultasi gratis, harga terbaik, pengiriman area Klaten dan sekitarnya.',
-  keywords: 'insulasi atap klaten, bahan insulasi, peredam panas atap, aluminium foil klaten, rockwool klaten',
+  title: 'Insulasi Atap Klaten & Yogyakarta | Solusi Nyaman & Hemat Energi',
+  description: 'Toko insulasi atap terpercaya di Klaten dan Yogyakarta. Woven Foil, Bubble Foil, Aluminium Foam. Konsultasi gratis, harga terbaik, pengiriman ke lokasi Anda.',
+  keywords: 'insulasi atap klaten, insulasi atap jogja, insulasi atap yogyakarta, peredam panas atap, woven foil klaten, bubble foil jogja, aluminium foam foil',
   openGraph: {
-    title: 'Insulasi Atap Klaten',
-    description: 'Solusi insulasi atap terbaik di Klaten',
+    title: 'Insulasi Atap Klaten & Yogyakarta',
+    description: 'Solusi insulasi atap terbaik di Klaten dan Yogyakarta',
     locale: 'id_ID',
     type: 'website',
   },

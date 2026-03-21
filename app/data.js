@@ -92,19 +92,36 @@ export const galleryImages = [
 // INFO TOKO
 // ============================================================
 export const storeInfo = {
-  name: "Insulasi Atap Klaten",
+  name: "Insulasi Atap",
   tagline: "Solusi Nyaman & Hemat Energi untuk Rumah Anda",
   phone: "08131556592",
   whatsappNumber: "6208131556592",
-  address: "Klaten, Jawa Tengah",
-  googleMapsUrl: "https://share.google/cF2IbK8F2WXHAI9ho",
-  googleMapsEmbed: "https://maps.google.com/maps?q=Klaten,+Jawa+Tengah&output=embed",
-  serviceArea: ["Klaten Kota", "Prambanan", "Delanggu", "Ceper", "Pedan", "Trucuk", "Boyolali", "Solo", "Yogyakarta"],
   openHours: "Senin – Sabtu, 08.00 – 17.00 WIB",
   benefits: [
     { icon: "🌡️", title: "Kurangi Panas", desc: "Turunkan suhu ruangan hingga 10°C" },
     { icon: "💰", title: "Hemat Listrik", desc: "Kurangi tagihan AC & kipas angin" },
     { icon: "🔇", title: "Peredam Suara", desc: "Suasana rumah lebih tenang" },
-    { icon: "🚚", title: "Antar ke Lokasi", desc: "Pengiriman area Klaten & sekitarnya" },
-  ]
+    { icon: "🚚", title: "Antar ke Lokasi", desc: "Pengiriman area Klaten & Jogja" },
+  ],
+  branches: [
+    {
+      id: "klaten",
+      city: "Klaten",
+      label: "Cabang Klaten",
+      address: "Klaten, Jawa Tengah",
+      googleMapsUrl: "https://share.google/cF2IbK8F2WXHAI9ho",
+      googleMapsEmbed: "https://maps.google.com/maps?q=Klaten,+Jawa+Tengah&output=embed&z=13",
+      serviceArea: ["Klaten Kota", "Prambanan", "Delanggu", "Ceper", "Pedan", "Trucuk", "Boyolali", "Solo"],
+    },
+    {
+      id: "jogja",
+      city: "Yogyakarta",
+      label: "Cabang Yogyakarta",
+      // ✏️ Ganti address & googleMapsUrl dengan lokasi Jogja Anda
+      address: "Yogyakarta, DIY",
+      googleMapsUrl: "https://maps.google.com/?q=Yogyakarta",
+      googleMapsEmbed: "https://maps.google.com/maps?q=Yogyakarta,+DIY&output=embed&z=13",
+      serviceArea: ["Kota Yogyakarta", "Sleman", "Bantul", "Godean", "Mlati", "Depok", "Kalasan", "Wonosari"],
+    },
+  ],
 }
