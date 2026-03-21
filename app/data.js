@@ -12,7 +12,7 @@ export const products = [
     "/images/woven_foil_pendukung1.jpg",
       "/images/woven_foil_pendukung2.jpg"
     ],
-    badge: "Terlaris",
+    badge: "Praktis",
     badgeColor: "bg-amber-500",
     price: "Rp 450.000 / roll",
     specs: [
@@ -34,7 +34,7 @@ export const products = [
     supportingImages: [
       // Tambahkan foto pendukung: "/images/bubble_foil_pendukung1.jpg"
     ],
-    badge: "Praktis",
+    badge: "Terlaris",
     badgeColor: "bg-blue-600",
     price: "Rp 350.000 / roll",
     specs: [
