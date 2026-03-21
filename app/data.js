@@ -55,7 +55,8 @@ export const products = [
     description: "Bukan sekadar insulasi biasa. Aluminium Foam Foil menggabungkan lapisan aluminium reflektif dengan foam tebal untuk perlindungan ganda — panas tertolak, suara teredam, dan ruangan Anda tetap nyaman sepanjang hari tanpa AC bekerja keras.",
     image: "/images/alumunium_foam_foil.webp",
     supportingImages: [
-      // Tambahkan foto pendukung: "/images/alumunium_foam_foil_pendukung1.jpg"
+  "/images/alumunium_foam_foil_pendukung1.jpg",
+      "/images/alumunium_foam_foil_pendukung1.jpg",
     ],
     badge: "Premium",
     badgeColor: "bg-stone-700",
