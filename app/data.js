@@ -10,6 +10,7 @@ export const products = [
     image: "/images/woven_foil.webp",
     supportingImages: [
     "/images/woven_foil_pendukung1.jpg"
+      "/images/woven_foil_pendukung2.jpg"
     ],
     badge: "Terlaris",
     badgeColor: "bg-amber-500",
