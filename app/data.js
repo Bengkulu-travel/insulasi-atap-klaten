@@ -83,8 +83,8 @@ export const galleryImages = [
   { id: 2, src: "/images/proyek2.jpg", alt: "Insulasi gedung", caption: "Satuan - Ambil di Lokasi" },
   // { id: 3, src: "/images/proyek3.jpg", alt: "Pemasangan woven foil", caption: "Pemasangan - Delanggu" },
   { id: 4, src: "/images/proyek4.jpg", alt: "Hasil pemasangan", caption: "Hasil - Ceper" },
-  // { id: 5, src: "/images/proyek5.jpg", alt: "Insulasi gudang", caption: "Gudang - KIK" },
-  // { id: 6, src: "/images/proyek6.jpg", alt: "Pemasangan bubble foil", caption: "Bubble Foil - Pedan" },
+  { id: 5, src: "/images/proyek5.jpg", alt: "Insulasi gudang", caption: "Pengiriman - KIK" },
+  { id: 6, src: "/images/proyek6.jpg", alt: "Pemasangan bubble foil", caption: "Bubble Foil - Gudang" },
 ]
 
 // ============================================================
