@@ -17,7 +17,7 @@ export default function Home() {
       <Benefits />
       <Branches />
       <Gallery />
-      <Location />
+      <Location branchId="klaten" />
       <Footer />
       <WhatsAppFloat />
     </main>

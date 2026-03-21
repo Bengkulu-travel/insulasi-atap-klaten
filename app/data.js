@@ -1,7 +1,6 @@
 // ============================================================
 // DATA PRODUK
 // ============================================================
-
 export const products = [
   {
     id: 1,
@@ -10,8 +9,7 @@ export const products = [
     description: "Atap panas bukan alasan ruangan jadi gerah. Woven Foil hadir sebagai solusi cerdas yang menolak panas sebelum masuk ke ruangan, sekaligus meredam suara hujan yang mengganggu — tanpa perlu renovasi besar.",
     image: "/images/woven_foil.webp",
     supportingImages: [
-      // Tambahkan foto pendukung di: public/images/woven_foil_pendukung1.jpg, dst.
-      // Contoh: "/images/woven_foil_pendukung1.jpg",
+      // Tambahkan foto pendukung: "/images/woven_foil_pendukung1.jpg"
     ],
     badge: "Terlaris",
     badgeColor: "bg-amber-500",
@@ -33,7 +31,7 @@ export const products = [
     description: "Tidak perlu dua lapisan insulasi. Bubble Foil menggabungkan kemampuan memantulkan panas dan menyerap suara dalam satu produk yang praktis, ringan, dan mudah dipasang sendiri — cocok untuk atap rumah hingga gudang.",
     image: "/images/bubble-foil.webp",
     supportingImages: [
-      // Tambahkan foto pendukung di: public/images/bubble_foil_pendukung1.jpg, dst.
+      // Tambahkan foto pendukung: "/images/bubble_foil_pendukung1.jpg"
     ],
     badge: "Praktis",
     badgeColor: "bg-blue-600",
@@ -56,7 +54,7 @@ export const products = [
     description: "Bukan sekadar insulasi biasa. Aluminium Foam Foil menggabungkan lapisan aluminium reflektif dengan foam tebal untuk perlindungan ganda — panas tertolak, suara teredam, dan ruangan Anda tetap nyaman sepanjang hari tanpa AC bekerja keras.",
     image: "/images/alumunium_foam_foil.webp",
     supportingImages: [
-      // Tambahkan foto pendukung di: public/images/alumunium_foam_foil_pendukung1.jpg, dst.
+      // Tambahkan foto pendukung: "/images/alumunium_foam_foil_pendukung1.jpg"
     ],
     badge: "Premium",
     badgeColor: "bg-stone-700",
@@ -76,20 +74,19 @@ export const products = [
 
 // ============================================================
 // DATA GALERI PROYEK
-// Tambahkan foto proyek Anda di folder: public/images/
-// Uncomment baris di bawah dan isi dengan nama file foto Anda
+// Upload foto ke public/images/ lalu uncomment dan isi di bawah
 // ============================================================
 export const galleryImages = [
   // { id: 1, src: "/images/proyek1.jpg", alt: "Pemasangan insulasi", caption: "Rumah Tinggal - Klaten Kota" },
-  // { id: 2, src: "/images/proyek2.jpg", alt: "Insulasi gedung", caption: "Bangunan Komersial - Prambanan" },
+  // { id: 2, src: "/images/proyek2.jpg", alt: "Insulasi gedung", caption: "Komersial - Prambanan" },
   // { id: 3, src: "/images/proyek3.jpg", alt: "Pemasangan woven foil", caption: "Pemasangan - Delanggu" },
-  // { id: 4, src: "/images/proyek4.jpg", alt: "Hasil pemasangan", caption: "Hasil Pemasangan - Ceper" },
-  // { id: 5, src: "/images/proyek5.jpg", alt: "Insulasi gudang", caption: "Pabrik & Gudang - KIK" },
+  // { id: 4, src: "/images/proyek4.jpg", alt: "Hasil pemasangan", caption: "Hasil - Ceper" },
+  // { id: 5, src: "/images/proyek5.jpg", alt: "Insulasi gudang", caption: "Gudang - KIK" },
   // { id: 6, src: "/images/proyek6.jpg", alt: "Pemasangan bubble foil", caption: "Bubble Foil - Pedan" },
 ]
 
 // ============================================================
-// INFO TOKO
+// INFO TOKO — storeInfo.branches[0] = Klaten, [1] = Jogja
 // ============================================================
 export const storeInfo = {
   name: "Insulasi Atap",
