@@ -29,7 +29,7 @@ export default function Navbar() {
     }`}>
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3 group">
+        <a href="/" className="flex items-center gap-3 group">
           <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${
             scrolled ? 'bg-amber-700' : 'bg-amber-700/90'
           }`}>
