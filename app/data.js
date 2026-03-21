@@ -9,7 +9,7 @@ export const products = [
     description: "Atap panas bukan alasan ruangan jadi gerah. Woven Foil hadir sebagai solusi cerdas yang menolak panas sebelum masuk ke ruangan, sekaligus meredam suara hujan yang mengganggu — tanpa perlu renovasi besar.",
     image: "/images/woven_foil.webp",
     supportingImages: [
-      Tambahkan foto pendukung: "/images/woven_foil_pendukung1.jpg"
+    "/images/woven_foil_pendukung1.jpg"
     ],
     badge: "Terlaris",
     badgeColor: "bg-amber-500",
