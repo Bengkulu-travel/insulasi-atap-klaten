@@ -7,7 +7,7 @@ export default function Benefits() {
     { icon: "🎯", title: "Produk Tepat Sasaran", desc: "Kami membantu Anda memilih jenis insulasi yang paling sesuai dengan kondisi atap, budget, dan kebutuhan Anda." },
     { icon: "🤝", title: "Konsultasi Gratis", desc: "Tim kami siap memberikan rekomendasi terbaik tanpa biaya tambahan, langsung via WhatsApp atau kunjungan." },
     { icon: "📦", title: "Stok Selalu Tersedia", desc: "Stok produk lengkap dan selalu siap. Tidak perlu menunggu lama — order hari ini, terima segera." },
-    { icon: "🚚", title: "Pengiriman ke Lokasi", desc: "Layanan antar langsung ke lokasi proyek Anda di Klaten, Jogja, dan kota-kota sekitarnya." },
+    { icon: "🚚", title: "Beli Satuan", desc: "Tidak ada minimum pembelian, Bisa satuan atau Borongan" },
     { icon: "💯", title: "Garansi Kualitas", desc: "Semua produk bergaransi dan sesuai standar SNI / ASTM. Kualitas terjamin, tidak asal murah." },
     { icon: "⚡", title: "Respon Cepat", desc: "Pesan via WhatsApp dan dapatkan respon dalam menit. Tidak ada pertanyaan yang dibiarkan tergantung." },
   ]
