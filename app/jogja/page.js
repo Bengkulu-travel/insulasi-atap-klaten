@@ -7,12 +7,15 @@ import Location from '../../components/Location'
 import Footer from '../../components/Footer'
 import WhatsAppFloat from '../../components/WhatsAppFloat'
 
+
 export const metadata = {
   title: 'Insulasi Atap Yogyakarta | Solusi Nyaman & Hemat Energi',
   description: 'Toko insulasi atap terpercaya di Yogyakarta. Woven Foil, Bubble Foil, Aluminium Foam. Konsultasi gratis, harga terbaik, pengiriman area Jogja, Sleman, Bantul dan sekitarnya.',
   keywords: 'insulasi atap jogja, insulasi atap yogyakarta, peredam panas atap yogyakarta, woven foil jogja, bubble foil yogyakarta',
+  alternates: {
+    canonical: 'https://www.insulasiatap.biz.id/jogja',
+  },
 }
-
 export default function JogjaPage() {
   return (
     <main>
