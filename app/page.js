@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Products from '../components/Products'
+import Kalkulator from '../components/Kalkulator'
 import Benefits from '../components/Benefits'
 import Branches from '../components/Branches'
 import Gallery from '../components/Gallery'
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Products />
+      <Kalkulator />
       <Benefits />
       <Branches />
       <Gallery />
