@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 export const metadata = {
   title: 'Apakah Insulasi Atap Benar-Benar Efektif? Ini Faktanya',
   description: 'Bukti nyata efektivitas insulasi atap dalam menurunkan suhu ruangan dan menghemat listrik di Klaten dan Yogyakarta.',
@@ -18,11 +19,7 @@ export default function Page() {
         <p className="text-stone-500 text-lg leading-relaxed">Banyak orang ragu sebelum membeli. Artikel ini menjawab dengan data dan fakta nyata tentang efektivitas insulasi atap.</p>
       </div>
       <div className="rounded-2xl overflow-hidden bg-stone-100 mb-8 aspect-video relative">
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-stone-400 gap-1">
-          <span className="text-3xl">🌡️</span>
-          <p className="font-medium text-sm">Gambar: insulasi-atap-efektif.jpg</p>
-          <p className="text-xs">Ukuran: 1200 × 675px | Perbandingan suhu sebelum-sesudah insulasi</p>
-        </div>
+        <Image src="/images/insulasi-atap-efektif.jpg" alt="apakah insulasi efektif" fill className="object-cover" sizes="(max-width: 768px) 100vw, 800px" />
       </div>
       <div className="space-y-6 text-stone-700 leading-relaxed">
         <h2 className="font-display text-2xl font-bold text-stone-900 mt-8 mb-3">Bagaimana Cara Kerja Insulasi Atap?</h2>

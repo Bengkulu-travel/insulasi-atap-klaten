@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 export const metadata = {
   title: 'Gudang Panas? Cara Mengatasi Suhu Tinggi Tanpa Boros Listrik',
   description: 'Gudang Panas? Cara Mengatasi Suhu Tinggi Tanpa Boros Listrik - panduan lengkap untuk insulasi atap di Klaten dan Yogyakarta.',
@@ -16,11 +17,7 @@ export default function Page() {
         <h1 className="font-display text-3xl md:text-4xl font-bold text-stone-900 leading-tight mb-4">Gudang Panas? Cara Mengatasi Suhu Tinggi Tanpa Boros Listrik</h1>
       </div>
       <div className="rounded-2xl overflow-hidden bg-stone-100 mb-8 aspect-video relative">
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-stone-400 gap-1">
-          <span className="text-3xl">📸</span>
-          <p className="font-medium text-sm">Gambar: insulasi-gudang-pabrik.jpg</p>
-          <p className="text-xs">Ukuran: 1200 x 675px | Foto pemasangan insulasi di gudang komersial</p>
-        </div>
+        <Image src="/images/insulasi-gudang-pabrik.jpg" alt="gudang panas" fill className="object-cover" sizes="(max-width: 768px) 100vw, 800px" />
       </div>
       <div className="space-y-6 text-stone-700 leading-relaxed">
         <h2 className="font-display text-2xl font-bold text-stone-900 mt-8 mb-3">Masalah Panas di Gudang dan Pabrik</h2>

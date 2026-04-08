@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Cara Mengurangi Panas Atap Tanpa AC | Tips Hemat Energi',
@@ -24,11 +25,7 @@ export default function Page() {
       </div>
 
       <div className="rounded-2xl overflow-hidden bg-stone-100 mb-8 aspect-video relative">
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-stone-400 gap-1">
-          <span className="text-3xl">🏠</span>
-          <p className="font-medium text-sm">Gambar: cara-mengurangi-panas-atap.jpg</p>
-          <p className="text-xs">Ukuran: 1200 × 675px | Ilustrasi rumah sejuk dengan insulasi</p>
-        </div>
+        <Image src="/images/cara-mengurangi-panas-atap.jpg" alt="cara mengurangi panas atap" fill className="object-cover" sizes="(max-width: 768px) 100vw, 800px" />
       </div>
 
       <div className="space-y-6 text-stone-700 leading-relaxed">

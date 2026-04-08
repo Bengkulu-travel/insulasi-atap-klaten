@@ -24,13 +24,8 @@ export default function Page() {
         </p>
       </div>
 
-      {/* Gambar hero */}
       <div className="rounded-2xl overflow-hidden bg-stone-100 mb-8 aspect-video relative">
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-stone-400 text-sm gap-1">
-          <span className="text-3xl">🌡️</span>
-          <p className="font-medium">Gambar: rumah-panas-klaten-jogja.jpg</p>
-          <p className="text-xs">Ukuran: 1200 × 675px | Ilustrasi rumah di siang hari terik</p>
-        </div>
+        <Image src="/images/rumah-panas-klaten-jogja.jpg" alt="kenapa rumah panas" fill className="object-cover" sizes="(max-width: 768px) 100vw, 800px" />
       </div>
 
       <div className="prose-content space-y-6 text-stone-700 leading-relaxed">

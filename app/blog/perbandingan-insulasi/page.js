@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Perbedaan Aluminium Foil vs Bubble Foil vs Foam Foil: Panduan Lengkap',
@@ -35,11 +36,7 @@ export default function Page() {
       </div>
 
       <div className="rounded-2xl overflow-hidden bg-stone-100 mb-8 aspect-video relative">
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-stone-400 gap-1">
-          <span className="text-3xl">📊</span>
-          <p className="font-medium text-sm">Gambar: perbandingan-jenis-insulasi.jpg</p>
-          <p className="text-xs">Ukuran: 1200 × 675px | Foto 3 produk berdampingan</p>
-        </div>
+        <Image src="/images/perbandingan-jenis-insulasi.jpg" alt="perbandingan insulasi" fill className="object-cover" sizes="(max-width: 768px) 100vw, 800px" />
       </div>
 
       <div className="space-y-6 text-stone-700 leading-relaxed">
@@ -51,11 +48,7 @@ export default function Page() {
 
         <h2 className="font-display text-2xl font-bold text-stone-900 mt-8 mb-3">1. Aluminium Woven Foil</h2>
         <div className="rounded-2xl overflow-hidden bg-stone-100 mb-4 h-48 relative">
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-stone-400 gap-1">
-            <span className="text-2xl">🔷</span>
-            <p className="font-medium text-sm">Gambar: woven-foil-detail.jpg</p>
-            <p className="text-xs">Ukuran: 800 × 450px | Close-up tekstur woven foil</p>
-          </div>
+          <Image src="/images/woven_foil.webp" alt="Woven Foil - tekstur dan tampilan produk" fill className="object-cover" sizes="800px" />
         </div>
         <p>
           Woven Foil terbuat dari anyaman serat polipropilena yang dilapisi aluminium di kedua sisi. Material ini sangat ringan, kuat, dan tidak mudah robek — cocok untuk berbagai kondisi atap. Dengan reflektivitas 95%, Woven Foil memantulkan sebagian besar radiasi panas matahari.
@@ -82,11 +75,7 @@ export default function Page() {
 
         <h2 className="font-display text-2xl font-bold text-stone-900 mt-8 mb-3">2. Bubble Foil (FLAB)</h2>
         <div className="rounded-2xl overflow-hidden bg-stone-100 mb-4 h-48 relative">
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-stone-400 gap-1">
-            <span className="text-2xl">🔵</span>
-            <p className="font-medium text-sm">Gambar: bubble-foil-detail.jpg</p>
-            <p className="text-xs">Ukuran: 800 × 450px | Close-up tekstur bubble foil</p>
-          </div>
+          <Image src="/images/bubble-foil.webp" alt="Bubble Foil - tekstur dan tampilan produk" fill className="object-cover" sizes="800px" />
         </div>
         <p>
           Bubble Foil menggabungkan lapisan aluminium reflektif dengan lapisan gelembung udara (bubble) di tengah. Lapisan udara ini bukan hanya memantulkan panas, tetapi juga menyerap getaran suara — menjadikannya insulasi ganda: termal sekaligus akustik.
