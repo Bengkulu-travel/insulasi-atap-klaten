@@ -3,12 +3,14 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { products, storeInfo } from '../app/data'
 
-function ProductCard({ product }) {
+function ProductCard({ product, index }) {
   const [showSpecs, setShowSpecs] = useState(false)
   const [activeImg, setActiveImg] = useState(product.image)
 
   const allImages = [product.image, ...(product.supportingImages || [])]
   const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent(product.whatsappMessage)}`
+  // Hanya gambar produk pertama yang di-priority (LCP element)
+  const isPriority = index === 0
 
   return (
     <div className="product-card bg-white rounded-3xl overflow-hidden border border-stone-100 shadow-sm flex flex-col">
@@ -18,8 +20,11 @@ function ProductCard({ product }) {
           src={activeImg}
           alt={product.name}
           fill
+          priority={isPriority}
+          loading={isPriority ? 'eager' : 'lazy'}
           className="object-cover"
-          sizes="(max-width: 768px) 100vw, 33vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
+          quality={80}
         />
         <div className={`absolute top-3 left-3 ${product.badgeColor} text-white text-xs font-bold px-3 py-1 rounded-full shadow`}>
           {product.badge}
@@ -37,7 +42,15 @@ function ProductCard({ product }) {
                 activeImg === img ? 'border-amber-600' : 'border-stone-200 hover:border-amber-300'
               }`}
             >
-              <Image src={img} alt={`${product.name} ${i + 1}`} fill className="object-cover" sizes="48px" />
+              <Image
+                src={img}
+                alt={`${product.name} ${i + 1}`}
+                fill
+                loading="lazy"
+                className="object-cover"
+                sizes="48px"
+                quality={70}
+              />
             </button>
           ))}
         </div>
@@ -120,14 +133,14 @@ export default function Products() {
           </h2>
           <div className="section-divider mx-auto mb-4"></div>
           <p className="text-stone-600 max-w-xl mx-auto">
-            Semua produk telah teruji kualitasnya. Konsultasikan kebutuhan insulasi atap Anda 
+            Semua produk telah teruji kualitasnya. Konsultasikan kebutuhan insulasi atap Anda
             langsung dengan kami untuk mendapatkan rekomendasi terbaik.
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map(product => (
-            <ProductCard key={product.id} product={product} />
+          {products.map((product, index) => (
+            <ProductCard key={product.id} product={product} index={index} />
           ))}
         </div>
 

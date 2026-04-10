@@ -11,7 +11,6 @@ export default function Gallery() {
   return (
     <section id="galeri" className="py-20 bg-stone-50">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Header */}
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 bg-stone-200 text-stone-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
             📸 Portofolio Kami
@@ -21,48 +20,45 @@ export default function Gallery() {
           </h2>
           <div className="section-divider mx-auto mb-4"></div>
           <p className="text-stone-600 max-w-xl mx-auto">
-            Dokumentasi pemasangan insulasi atap yang telah kami kerjakan di berbagai 
+            Dokumentasi pemasangan insulasi atap yang telah kami kerjakan di berbagai
             lokasi di Klaten dan sekitarnya.
           </p>
         </div>
 
         {hasImages ? (
-          <>
-            {/* Gallery Grid */}
-            <div className="gallery-grid mb-10">
-              {galleryImages.map((img) => (
-                <div
-                  key={img.id}
-                  onClick={() => setSelected(img)}
-                  className="group relative rounded-2xl overflow-hidden cursor-pointer aspect-[4/3] border border-stone-100 hover:shadow-xl transition-all duration-300"
-                >
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-amber-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                    <span className="text-white text-sm font-semibold">{img.caption}</span>
-                  </div>
+          <div className="gallery-grid mb-10">
+            {galleryImages.map((img, i) => (
+              <div
+                key={img.id}
+                onClick={() => setSelected(img)}
+                className="group relative rounded-2xl overflow-hidden cursor-pointer aspect-[4/3] border border-stone-100 hover:shadow-xl transition-all duration-300"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  loading="lazy"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  quality={75}
+                />
+                <div className="absolute inset-0 bg-amber-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <span className="text-white text-sm font-semibold">{img.caption}</span>
                 </div>
-              ))}
-            </div>
-          </>
+              </div>
+            ))}
+          </div>
         ) : (
-          /* Placeholder sementara foto belum ditambahkan */
           <div className="text-center py-16 bg-white rounded-3xl border border-dashed border-stone-300 mb-10">
             <div className="text-5xl mb-4">🏗️</div>
             <h3 className="font-display text-xl font-bold text-stone-700 mb-2">Foto Proyek Segera Hadir</h3>
             <p className="text-stone-400 text-sm max-w-sm mx-auto">
-              Kami sedang menyiapkan dokumentasi proyek terbaik kami. 
+              Kami sedang menyiapkan dokumentasi proyek terbaik kami.
               Hubungi kami langsung untuk melihat portofolio lengkap.
             </p>
           </div>
         )}
 
-        {/* CTA */}
         <div className="text-center">
           <p className="text-stone-500 mb-4 text-sm">
             Ingin diskusi proyek insulasi atap Anda?
@@ -89,7 +85,15 @@ export default function Gallery() {
             onClick={e => e.stopPropagation()}
           >
             <div className="relative h-72">
-              <Image src={selected.src} alt={selected.alt} fill className="object-cover" sizes="512px" />
+              <Image
+                src={selected.src}
+                alt={selected.alt}
+                fill
+                loading="lazy"
+                className="object-cover"
+                sizes="512px"
+                quality={80}
+              />
             </div>
             <div className="p-4 flex items-center justify-between">
               <p className="font-semibold text-stone-800">{selected.caption}</p>
