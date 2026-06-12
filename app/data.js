@@ -94,7 +94,7 @@ export const storeInfo = {
   name: "Insulasi Atap",
   tagline: "Solusi Nyaman & Hemat Energi untuk Rumah Anda",
   phone: "08131556592",
-  whatsappNumber: "6208131556592",
+  whatsappNumber: "6285559171612",
   openHours: "Senin – Sabtu, 08.00 – 17.00 WIB",
   benefits: [
     { icon: "🌡️", title: "Kurangi Panas", desc: "Turunkan suhu ruangan hingga 10°C" },
