@@ -90,7 +90,7 @@ export default function Page() {
             Kami melayani pemasangan insulasi atap di seluruh area Klaten dan Yogyakarta. Konsultasikan kebutuhan Anda sekarang.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="https://wa.me/6208131556592?text=Halo, saya ingin konsultasi tentang insulasi atap untuk rumah saya."
+            <a href="https://wa.me/6208131556592?text=Halo, saya lihat di insulasiatap.biz.id, saya ingin konsultasi tentang insulasi atap untuk rumah saya."
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">
               Chat WhatsApp Sekarang

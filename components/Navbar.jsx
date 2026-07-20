@@ -30,7 +30,7 @@ export default function Navbar() {
     { href: '/blog', label: 'Artikel' },
   ]
 
-  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=Halo, saya ingin konsultasi mengenai insulasi atap.`
+  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Saya melihat ini di website insulasiatap.biz.id, saya ingin konsultasi bertanya?')}`
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${

@@ -23,7 +23,7 @@ export const products = [
       { label: "Aplikasi", value: "Rumah, ruko, gudang, pabrik" },
     ],
     highlights: ["Tolak panas hingga 95%", "Redam suara hujan", "Tahan jamur & lembab"],
-    whatsappMessage: "Halo, saya tertarik dengan Woven Foil (Rp 450.000/roll). Bisa info ketersediaan stok dan cara pemesanan?"
+    whatsappMessage: "Halo, saya lihat di insulasiatap.biz.id, saya tertarik dengan Woven Foil (Rp 450.000/roll). Bisa info ketersediaan stok dan cara pemesanan?"
   },
   {
     id: 2,
@@ -46,7 +46,7 @@ export const products = [
       { label: "Aplikasi", value: "Rumah, gudang, pabrik, komersial" },
     ],
     highlights: ["Foil reflektif 2 sisi", "Tebal 4mm, ringan", "Mudah dipasang sendiri"],
-    whatsappMessage: "Halo, saya tertarik dengan Bubble Foil Peredam Panas (Rp 350.000/roll). Bisa info ketersediaan stok dan cara pemesanan?"
+    whatsappMessage: "Halo, saya lihat di insulasiatap.biz.id, saya tertarik dengan Bubble Foil Peredam Panas (Rp 350.000/roll). Bisa info ketersediaan stok dan cara pemesanan?"
   },
   {
     id: 3,
@@ -70,7 +70,7 @@ export const products = [
       { label: "Aplikasi", value: "Rumah, kantor, ruko, pabrik, gedung" },
     ],
     highlights: ["Tolak panas hingga 97%", "Foam tebal, tahan lembab", "Hemat energi AC"],
-    whatsappMessage: "Halo, saya tertarik dengan Aluminium Foam Foil (mulai Rp 520.000/roll). Bisa info ukuran lengkap dan ketersediaan stok?"
+    whatsappMessage: "Halo, saya lihat di insulasiatap.biz.id, saya tertarik dengan Aluminium Foam Foil (mulai Rp 520.000/roll). Bisa info ukuran lengkap dan ketersediaan stok?"
   },
 ]
 

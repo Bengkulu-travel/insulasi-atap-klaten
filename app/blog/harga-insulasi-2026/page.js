@@ -83,7 +83,7 @@ export default function Page() {
           <h3 className="font-display text-xl font-bold text-amber-900 mb-2">Hitung Kebutuhan & Pesan Sekarang</h3>
           <div className="flex flex-col sm:flex-row gap-3 mt-4">
             <Link href="/#kalkulator" className="inline-flex items-center justify-center bg-amber-700 hover:bg-amber-800 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">Buka Kalkulator</Link>
-            <a href="https://wa.me/6208131556592?text=Halo, saya ingin tanya harga insulasi atap." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">Chat WhatsApp</a>
+            <a href="https://wa.me/6208131556592?text=Halo, saya lihat di insulasiatap.biz.id, saya ingin tanya harga insulasi atap." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">Chat WhatsApp</a>
           </div>
         </div>
         <div className="border-t border-stone-100 pt-6 mt-8">

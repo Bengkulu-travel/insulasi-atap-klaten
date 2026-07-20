@@ -5,7 +5,7 @@ import { galleryImages, storeInfo } from '../app/data'
 
 export default function Gallery() {
   const [selected, setSelected] = useState(null)
-  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya ingin konsultasi mengenai proyek insulasi atap.')}`
+  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya lihat portofolio di insulasiatap.biz.id, saya ingin konsultasi mengenai proyek insulasi atap.')}`
   const hasImages = galleryImages.length > 0
 
   return (

@@ -1,7 +1,7 @@
 import { storeInfo } from '../app/data'
 
 export default function WhatsAppFloat() {
-  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya ingin konsultasi mengenai insulasi atap.')}`
+  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Saya melihat ini di website insulasiatap.biz.id, saya ingin konsultasi bertanya?')}`
 
   return (
     <a

@@ -114,7 +114,7 @@ export default function Page() {
               className="inline-flex items-center justify-center gap-2 bg-amber-700 hover:bg-amber-800 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">
               Buka Kalkulator
             </Link>
-            <a href="https://wa.me/6208131556592?text=Halo, saya ingin tanya cara mengurangi panas atap rumah saya."
+            <a href="https://wa.me/6208131556592?text=Halo, saya lihat di insulasiatap.biz.id, saya ingin tanya cara mengurangi panas atap rumah saya."
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">
               Konsultasi Gratis

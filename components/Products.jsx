@@ -147,7 +147,7 @@ export default function Products() {
         <div className="mt-12 text-center">
           <p className="text-stone-500 mb-4">Tidak menemukan produk yang Anda cari?</p>
           <a
-            href={`https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya ingin bertanya tentang produk insulasi yang sesuai untuk kebutuhan saya.')}`}
+            href={`https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya lihat di insulasiatap.biz.id, saya ingin bertanya tentang produk insulasi yang sesuai untuk kebutuhan saya.')}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white font-bold px-6 py-3 rounded-full transition-all"

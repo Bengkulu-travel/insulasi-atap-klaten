@@ -6,8 +6,8 @@ export default function Location({ branchId = 'klaten' }) {
   const isJogja = branchId === 'jogja'
 
   const waMsg = isJogja
-    ? 'Halo, saya dari Yogyakarta dan ingin tahu lokasi toko insulasi atap. Bisa kirim alamat lengkap?'
-    : 'Halo, saya ingin tahu lokasi toko insulasi atap Klaten. Bisa kirim alamat lengkap?'
+    ? 'Halo, saya lihat di insulasiatap.biz.id, saya dari Yogyakarta dan ingin tahu lokasi toko insulasi atap. Bisa kirim alamat lengkap?'
+    : 'Halo, saya lihat di insulasiatap.biz.id, saya ingin tahu lokasi toko insulasi atap Klaten. Bisa kirim alamat lengkap?'
 
   const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent(waMsg)}`
 

@@ -4,7 +4,7 @@ const benefits = storeInfo.benefits || []
 const jogjaServiceArea = (storeInfo.branches[1] || storeInfo.branches[0] || {}).serviceArea || []
 
 export default function HeroJogja() {
-  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya dari Yogyakarta dan ingin konsultasi mengenai insulasi atap.')}`
+  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya dari Yogyakarta, lihat insulasiatap.biz.id, dan ingin konsultasi mengenai insulasi atap.')}`
 
   return (
     <section className="relative min-h-screen flex items-center hero-pattern overflow-hidden pt-20">

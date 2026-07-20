@@ -4,7 +4,7 @@ const benefits = storeInfo.benefits || []
 const klatenBranch = storeInfo.branches[0]
 
 export default function Hero() {
-  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Halo, saya ingin konsultasi mengenai insulasi atap.')}`
+  const waUrl = `https://wa.me/${storeInfo.whatsappNumber}?text=${encodeURIComponent('Saya melihat ini di website insulasiatap.biz.id, saya ingin konsultasi bertanya?')}`
 
   return (
     <section className="relative min-h-screen flex items-center hero-pattern overflow-hidden pt-20">

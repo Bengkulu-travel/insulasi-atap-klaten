@@ -39,11 +39,11 @@ export default function Page() {
             <p>📦 Gudang 1000 m² → 17 roll Foam Foil → estimasi Rp 8.840.000</p>
           </div>
         </div>
-        <p>Kami melayani pembelian volume besar. <a href="https://wa.me/6208131556592?text=Halo, saya ingin tanya insulasi untuk gudang." target="_blank" rel="noopener noreferrer" className="text-amber-700 hover:underline font-medium">Hubungi kami untuk harga khusus</a>.</p>
+        <p>Kami melayani pembelian volume besar. <a href="https://wa.me/6208131556592?text=Halo, saya lihat di insulasiatap.biz.id, saya ingin tanya insulasi untuk gudang." target="_blank" rel="noopener noreferrer" className="text-amber-700 hover:underline font-medium">Hubungi kami untuk harga khusus</a>.</p>
         <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 mt-8">
           <h3 className="font-display text-xl font-bold text-amber-900 mb-2">Siap Mulai? Konsultasi Gratis</h3>
           <div className="flex flex-col sm:flex-row gap-3 mt-4">
-            <a href="https://wa.me/6208131556592?text=Halo, saya ingin konsultasi insulasi atap." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">Chat WhatsApp</a>
+            <a href="https://wa.me/6208131556592?text=Halo, saya lihat di insulasiatap.biz.id, saya ingin konsultasi insulasi atap." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">Chat WhatsApp</a>
             <Link href="/#kalkulator" className="inline-flex items-center justify-center border border-amber-700 text-amber-800 font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-amber-50 transition-all">Hitung Kebutuhan</Link>
           </div>
         </div>
