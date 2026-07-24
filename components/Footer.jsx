@@ -59,6 +59,17 @@ export default function Footer() {
 
         <div className="pt-6 border-t border-stone-800 text-center">
           <p className="text-stone-500 text-sm">© {year} Insulasi Atap Klaten & Yogyakarta. Semua hak dilindungi.</p>
+          <p className="text-stone-500 text-sm mt-1">
+            Dibuat oleh{' '}
+            <a
+              href="https://webklaten.biz.id/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-stone-400 hover:text-amber-400 transition-colors"
+            >
+              Web Klaten
+            </a>
+          </p>
         </div>
       </div>
     </footer>
